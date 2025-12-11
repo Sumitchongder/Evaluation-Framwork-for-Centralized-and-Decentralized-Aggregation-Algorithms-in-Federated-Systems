@@ -60,6 +60,14 @@ where \(a_i\) is client \(i\)'s accuracy, and \(\bar{a}\) is the mean accuracy.
 ---
 
 ## Installation
+
 ```bash
 # Python 3.9+ recommended
 pip install streamlit torch torchvision scikit-learn numpy pandas matplotlib networkx pyyaml
+```
+
+---
+
+## Registration of Copyright Certificate (Government of India)
+
+<img width="1142" height="1882" alt="Image" src="https://github.com/user-attachments/assets/e1996703-d64f-49b9-885a-be6cdc7f9708" />
