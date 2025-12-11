@@ -51,11 +51,27 @@ It models privacy, robustness, and communication constraints encountered in real
 - **Communication cost:** Estimated MB transferred per round (uploads, broadcasts, or neighbor mixing).
 - **Robustness (acc drop vs baseline):** Difference from first‑round baseline when attacks are enabled.
 
+---
+
+### Fairness Metric
+
 Mathematically, fairness is computed as:
-\[
+
+```math
 \text{FairnessStd} = \sqrt{\frac{1}{N}\sum_{i=1}^{N}\left(a_i - \bar{a}\right)^2}
-\]
-where \(a_i\) is client \(i\)'s accuracy, and \(\bar{a}\) is the mean accuracy.
+```
+
+where:
+
+* $a_i$ — accuracy of client *i*
+* $\bar{a}$ — mean accuracy across all clients
+* $N$ — total number of clients
+
+### Intuition
+
+* This metric measures the **spread of accuracies** across clients.
+* A lower value indicates a **fairer distribution** of accuracy among clients.
+* A higher value suggests **greater disparity** in client performance.
 
 ---
 
